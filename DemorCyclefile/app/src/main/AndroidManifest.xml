@@ -13,7 +13,8 @@
         android:theme="@style/Theme.DemorCyclefile">
         <activity
             android:name=".Subactivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
