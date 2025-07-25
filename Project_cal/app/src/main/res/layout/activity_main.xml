@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_kq"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_kq"
+        app:layout_constraintTop_toBottomOf="@+id/input_nhapB" />
+
+    <EditText
+        android:id="@+id/input_nhapB"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_nhapB"
+        app:layout_constraintTop_toBottomOf="@+id/input_nhapA" />
+
+    <TextView
+        android:id="@+id/txt_kq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Kết quả"
+        android:textColor="#838181"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nhapB" />
+
+    <TextView
+        android:id="@+id/txt_nhapB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Nhập B"
+        android:textColor="#838181"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nhapA" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="127dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="Caculator"
+        android:textAlignment="center"
+        android:textColor="#47A249"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_nhapA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Nhập A"
+        android:textColor="#838181"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <EditText
+        android:id="@+id/input_nhapA"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_nhapA"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/btn_tong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2F2F2F"
+        android:text="Tổng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_kq" />
+
+    <Button
+        android:id="@+id/btn_hieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2F2F2F"
+        android:text="Hiệu"
+        app:layout_constraintStart_toEndOf="@+id/btn_tong"
+        app:layout_constraintTop_toBottomOf="@+id/input_kq" />
+
+    <Button
+        android:id="@+id/btn_tich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2F2F2F"
+        android:text="Tích"
+        app:layout_constraintStart_toEndOf="@+id/btn_hieu"
+        app:layout_constraintTop_toBottomOf="@+id/input_kq" />
+
+    <Button
+        android:id="@+id/btn_thuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2F2F2F"
+        android:text="Thương"
+        app:layout_constraintStart_toEndOf="@+id/btn_tich"
+        app:layout_constraintTop_toBottomOf="@+id/input_kq" />
+</androidx.constraintlayout.widget.ConstraintLayout>
