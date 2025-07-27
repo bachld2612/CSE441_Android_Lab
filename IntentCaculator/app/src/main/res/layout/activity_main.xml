@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yêu cầu kết quả"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Input A -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập A:"
+        android:textColor="#008000"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/input_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Nhập giá trị A"
+        android:textColorHint="#888888" />
+
+    <!-- Input B -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập B:"
+        android:textColor="#008000"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/input_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Nhập giá trị B"
+        android:textColorHint="#888888" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả:"
+        android:textColor="#FF4500"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btn_ket_qua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YÊU CẦU KẾT QUẢ"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8000FF"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>
