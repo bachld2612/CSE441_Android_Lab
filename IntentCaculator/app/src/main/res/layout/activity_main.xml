@@ -55,12 +55,13 @@
 
     <!-- Kết quả -->
     <TextView
+        android:id="@+id/txt_kq"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Kết quả:"
         android:textColor="#FF4500"
-        android:textSize="16sp"
-        android:layout_marginTop="12dp" />
+        android:textSize="16sp" />
 
     <!-- Button -->
     <Button
