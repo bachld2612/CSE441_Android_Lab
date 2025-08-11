@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top|center_horizontal">
+
+    <!-- Thanh tiêu đề vàng -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:text="Bạn đã chọn"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#1E3A8A"
+        android:background="#FFE34E"/> <!-- vàng -->
+
+    <!-- Tên điện thoại được truyền sang -->
+    <TextView
+        android:id="@+id/txt_subphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Điện thoại SamSung"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#1E3A8A"/>
+</LinearLayout>
