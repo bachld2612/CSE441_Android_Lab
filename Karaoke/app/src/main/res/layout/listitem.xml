@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Mã số bài hát -->
+    <TextView
+        android:id="@+id/btnmaso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52300"
+        android:textColor="#0000FF"
+        android:textSize="16sp"
+        android:paddingEnd="8dp"
+        android:textStyle="bold" />
+
+    <!-- Tiêu đề bài hát -->
+    <TextView
+        android:id="@+id/bttieude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Em là ai Tôi là ai"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <!-- Khu vực nút like/unlike -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnlike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_like"
+            android:background="@android:color/transparent"
+            android:contentDescription="Like" />
+
+        <ImageButton
+            android:id="@+id/btnunlike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_unlike"
+            android:background="@android:color/transparent"
+            android:contentDescription="Unlike" />
+    </FrameLayout>
+
+</LinearLayout>

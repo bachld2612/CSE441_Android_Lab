@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:padding="8dp">
+
+    <!-- Hàng 1: Mã số -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã số:"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnmaso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="52300"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <!-- Hàng 2: Tên bài hát -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên bài hát:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bttieude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHÉN ĐẮNG (REMIX)"
+            android:textColor="#00AA00"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <!-- Hàng 3: Lời bài hát -->
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lời bài hát:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtloibaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Một ngày anh nhớ, nhớ bóng hình em..."
+            android:ellipsize="end"
+            android:singleLine="true" />
+    </TableRow>
+
+    <!-- Hàng 4: Tác giả -->
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tác giả:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mbttacgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trương Lê Sơn"
+            android:textColor="#00AA00" />
+    </TableRow>
+
+    <!-- Hàng 5: Yêu thích -->
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yêu Thích:"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnthich"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_like"
+                android:background="@android:color/transparent"
+                android:contentDescription="Like" />
+
+            <ImageButton
+                android:id="@+id/btnkhongthich"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_unlike"
+                android:background="@android:color/transparent"
+                android:contentDescription="Unlike" />
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>
