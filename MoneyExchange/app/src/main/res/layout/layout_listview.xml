@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2"
+    android:padding="4dp"
+    android:background="@android:color/white"
+    android:divider="@android:color/darker_gray"
+    android:showDividers="middle">
+
+    <!-- Hàng 1 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- Icon -->
+        <ImageView
+            android:id="@+id/imgHinh"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="4dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <!-- Loại tiền + Mua TM -->
+        <TextView
+            android:id="@+id/txtMuaTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MuaTM: 16220"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Bán TM -->
+        <TextView
+            android:id="@+id/txtBanTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BanTM: 16370"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </TableRow>
+
+    <!-- Hàng 2 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- Loại tiền -->
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:padding="4dp" />
+
+        <!-- Mua CK -->
+        <TextView
+            android:id="@+id/txtMuaCK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MuaCK: 22920"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Bán CK -->
+        <TextView
+            android:id="@+id/txtBanCK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BanCK: 23170"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </TableRow>
+
+</TableLayout>
