@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Tùy chọn: khai báo dữ liệu muốn backup -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- Tùy chọn: khai báo dữ liệu muốn transfer -->
+    </device-transfer>
+</data-extraction-rules>
