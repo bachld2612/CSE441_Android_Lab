@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Mã số -->
+    <TextView
+        android:id="@+id/txtmaso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52300"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Tiêu đề bài hát -->
+    <TextView
+        android:id="@+id/txttieude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Em là ai Tôi"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- Nút like/unlike -->
+    <ImageButton
+        android:id="@+id/btnlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unlike"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:contentDescription="like" />
+
+</LinearLayout>
